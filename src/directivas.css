@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@tailwind base;
+@tailwind components;
+.boton{
+    @apply px-5 py-2 sm:px-16 sm:py-5 rounded-full font-body font-bold text-sm shadow-md shadow-bordes;
+}
+.boton-white{
+    @apply boton bg-white text-footer;
+}
+.boton-rosa{
+    @apply boton bg-rosa text-white transition-all duration-500 hover:bg-pink-400;
+}
+.padding-section{
+    @apply py-5 px-7 sm:py-10 sm:px-14;
+}
+.titulo{
+    @apply font-head font-semibold text-footer sm:leading-relaxed mb-5 text-center sm:text-left;
+}
+.parrafo{
+    @apply font-body font-medium mb-7 text-center sm:text-left;
+}
+.card{
+    @apply bg-white rounded-lg p-10 flex flex-wrap mb-10 shadow-md shadow-bordes;
+}
+.imagen-card{
+    @apply sm:w-1/2 px-5;
+}
+.texto-card{
+    @apply sm:w-1/2 flex flex-col justify-center px-5 ;
+}
+.titulo-card{
+    @apply titulo text-lg sm:text-3xl;
+
+}
+.parrafo-card{
+    @apply parrafo text-bordes text-sm sm:text-lg;
+}
+.iconos-sociales{
+    @apply text-[40px] mr-5;
+}
+.hover-iconos-sociales{
+    @apply rounded-full transition-all duration-500 hover:bg-rosa;
+}
+@tailwind utilities;
